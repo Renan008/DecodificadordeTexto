@@ -1,2 +1,2 @@
-Site do Projeto proposto pela trilha de formação Alura.
-Oracle Next Education.
+Challenge desenvolvido pela Alura no programa Oracle Next Education
+Decodificador de Texto.
