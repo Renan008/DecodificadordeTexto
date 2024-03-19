@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --cor-fundo: #F3F5FC;
+    --cor-azul-escuro: #0A3871;
+    --cor-branco: #ffffff;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+main {
+    width: 100vw;
+    height: 90vh;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 1%;
+}
+ 
+.conteudo-esquerda {
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    width: 50vw;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: var(--cor-fundo);
+    color: var(--cor-azul-escuro);
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.texto::placeholder {
+    color: var(--cor-azul-escuro);
+}
+
+.texto::-webkit-scrollbar {
+    width: 8px;
+}
+
+.texto::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul-escuro);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.texto::-webkit-scrollbar-track {
+    background-color: var(--cor-fundo);
+}
+
+.conteudo-esquerda-final {
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-esquerda-regras {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: default;
+}
+
+.conteudo-esquerda-regras img {
+    width: 20px;
+    margin-left: 4px;
+}
+
+.conteudo-esquerda-regras p {
+    font-size: 15px;
+    color: #574949;
+    transition: 0.5s;
+}
+
+.conteudo-esquerda-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.conteudo-esquerda-botoes button {
+    width: 100%;
+    padding: 18px;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.criptografar {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
+    border: none;
+}
+
+.criptografar:hover {
+    background-color: #0f50a0;
+}
+
+.descriptografar {
+    border: 1.5px var(--cor-azul-escuro) solid;
+    background-color: #D8DFE8;
+    color: var(--cor-azul-escuro)
+}
+
+.descriptografar:hover {
+    border: 1.5px #1455a5 solid;
+    background-color: #f5f2f2;
+}
+
+.conteudo-direita {
+    width: 25%;
+    margin: 2%;
+    padding: 1.3% 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-branco);
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000001e;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.conteudo-direita::-webkit-scrollbar {
+    width: 8px;
+}
+
+.conteudo-direita::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul-escuro);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.conteudo-direita::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.texto-criptografado {
+    display: none;
+    width: 100%;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 15%;
+}
+
+.conteudo-direita-itens {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 40%;
+}
+
+.conteudo-direita img {
+    width: 70%;
+}
+
+.conteudo-direita-mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    text-align: center;
+    cursor: default;
+}
+
+.conteudo-direita-mensagem h2 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.conteudo-direita-mensagem p {
+    font-size: 15px;
+}
+
+.conteudo-direita-copiar {
+    display: none;
+    width: 100%;
+    padding: 18px 0;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1.5px var(--cor-azul-escuro) solid;
+    background-color: var(--cor-branco);
+    color: var(--cor-azul-escuro);
+}
+
+.conteudo-direita-copiar:hover {
+    border: 1.5px #1356a8 solid;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
+}
